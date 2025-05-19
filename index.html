@@ -11,6 +11,7 @@
 <body>
     <header>
         <h1>Jair Palaguachi</h1>
+        <img src="https://placehold.co/400" alt="Foto de perfil de Jair Palaguachi" style="width: 200px; height: 200px; border-radius: 100%;">
         <nav>
             <ul>
                 <li><a href="#perfil-profesional">Perfil Profesional</a></li>
@@ -18,6 +19,7 @@
                 <li><a href="#educacion">Educación</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +34,167 @@
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <p>Información sobre tu formación académica.</p>
+            <p style="font-weight: bold;"> Escuela Superior Politécnica del Litoral (ESPOL)</p>
+            <p>Ingeniería en Computación (2023-Actualidad)</p>
+            <!-- Párrafo con enlace -->
+            <p>Visita el sitio oficial de ESPOL para más información: 
+                <a href="https://www.espol.edu.ec" target="_blank">www.espol.edu.ec</a>
+            </p>
+            <div style="margin-top:16px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=Lh2KTUucLj-ybx6v" 
+                    title="Video ESPOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
-            <p>Lista de tus habilidades principales.</p>
+            <p>Habilidades Técnicas:</p>
+
+            <!-- Lista ordenada -->
+            <ol>
+                <li>Programación en Python</li>
+                <li>Desarrollo Web</li>
+                <li>Trabajo en equipo</li>
+            </ol>
+
+            <p>Habilidades Blandas:</p>
+
+            <!-- Lista no ordenada -->
+            <ul>
+                <li>Responsable</li>
+                <li>Creativo</li>
+                <li>Puntual</li>
+            </ul>
+            
+            <p>Resumen:</p>
+
+            <!-- Tabla sin bordes -->
+            <table style="border-collapse: collapse;" border="0" cellspacing="5" cellpadding="5" 
+                width="75%">
+                
+                <tr>
+                    <th></th>
+                    <th>Habilidad  </th>
+                    <th>Nivel</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Python</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>HTML/CSS  </td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Java</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>SQL</td>
+                    <td>Intermedio</td>
+            </table>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Información para que puedan contactarte.</p>
+            <p>Correo Electrónico:  <a href="mailto:">jpalagua@espol.edu.ec</a>
+            <p>Teléfono: <a href="tel:+59398626876">+593 92986276</a></p>
+            <p>Dirección: Guayaquil, Ecuador
+            </p>
+            <p style="font-weight: bold;"> 
+                Contáctame a través del siguiente formulario:
+                
+            </p>
+
+            <form action="#" method="post" >
+                <!-- Texto en una línea -->
+                <label for = "name">
+                    Nombre completo:
+                    <input type="text" id="control1" name="nombre" required>
+                </label>
+                <!-- Lista desplegable -->
+                <label>
+                    Motivo de contacto:
+                    <select name="motivo" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="trabajo">Oferta de trabajo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </label>
+
+                <!-- Opciones relacionadas (radio) -->
+                <fieldset style="border: none; padding: 0;">
+                    <legend>¿Prefiere ser contactado por?</legend>
+
+                    <label><input type="radio" id="contacto_email" name="contacto" value="email" required> Email</label>
+
+                    <label><input type="radio" id="contacto_telefono"  name="contacto" value="telefono" required> Teléfono</label>
+                </fieldset>
+
+                <!-- Vector de valores (checkbox) -->
+                <fieldset style="border: none; padding: 0;">
+                    <legend>Áreas de interés:</legend>
+                    <label><input type="checkbox" name="interes[]" value="desarrollo" required> Desarrollo</label>
+                    <label><input type="checkbox" name="interes[]" value="soporte" required> Soporte</label>
+                    <label><input type="checkbox" name="interes[]" value="investigacion" required> Investigación</label>
+                </fieldset>
+                <!-- Área de texto -->
+                <label>
+                    Mensaje:
+                    <textarea name="mensaje" rows="4" required></textarea>
+                </label>
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9275937854717!2d-79.96740373045667!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1d7e2e7e1%3A0x7e6b0e6b0e6b0e6b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716123456789!5m2!1ses!2sec" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <article>
+                <blockquote>
+                    "Jair demostró una gran capacidad para resolver problemas complejos y trabajar bajo presión."
+                </blockquote>
+                <p>
+                    <span>María González</span><br>
+                    Gerente de Proyectos en TechSolutions<br><br>
+                    María fue mi supervisora directa durante dos años, donde colaboramos en el desarrollo de aplicaciones web para clientes internacionales.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Su actitud proactiva y habilidades técnicas fueron clave para el éxito de nuestro equipo."
+                </blockquote>
+                <p>
+                    <span>Carlos Pérez</span><br>
+                    Líder de Desarrollo en Innovatech<br>
+                    Carlos y yo trabajamos juntos en varios proyectos de software, destacando siempre su compromiso y responsabilidad.
+                </p>
+            </article>
+            <article>
+                <blockquote>
+                    "Jair es un profesional confiable, siempre dispuesto a aprender y aportar nuevas ideas."
+                </blockquote>
+                <p>
+                    <span>Lucía Ramírez</span><br>
+                    Coordinadora de TI en Soluciones Digitales<br>
+                    Lucía fue mi jefa en el área de soporte técnico, donde colaboramos en la mejora de procesos internos y atención al cliente.
+                </p>
+            </article>
         </section>
     </main>
     <footer>
