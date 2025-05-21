@@ -1,0 +1,57 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título principal centrado y en negrita */
+h1 {
+    font-family: "Tangerine", serif;
+    text-align: center;
+    font-weight: bold;
+}
+h2 {
+    text-align:left;
+    font-weight: bold;
+}
+
+/* Selector por id para la foto */
+#photo {
+    width: 8vw;
+    height: auto;
+}
+
+/* Selector por clase para subtítulos */
+.subtitle {
+    color: rgb(151 156 165 / 0.89);
+    text-transform: uppercase;
+}
+footer  p {
+
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+
+}
+nav > ul {
+
+    /* Eliminar los estilos de lista predeterminados */
+    list-style: none;
+
+}
+section {
+    border: 0.2pt solid #cedddd;
+    margin: 4px 2px 8px 2px;
+    padding: 1.5% 0.8%;
+    margin-bottom: 1.2rem;
+
+    /* borde redondeado con un radio de 5 píxeles */
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+
+   /* sombra a un elemento */
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+}
