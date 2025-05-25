@@ -2,11 +2,14 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /* Título principal centrado y en negrita */
 h1 {
-    font-family: "Tangerine", serif;
-    text-align: center;
-    font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  
 }
 h2 {
     text-align:left;
