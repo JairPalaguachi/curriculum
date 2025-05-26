@@ -22,7 +22,7 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   color: #020826;
@@ -55,7 +55,7 @@ p {
 
 /* Selector por id para la foto */
 #photo {
-    width: 8vw;
+    width: 16vw;
     height: auto;
 }
 
@@ -83,6 +83,7 @@ nav > ul {
     list-style: none;
 
 }
+
 section {
     border: 0.2pt solid #8c7851dd;
     margin: 4px 2px 8px 2px;
@@ -103,3 +104,106 @@ section {
     background-color: #f9f4ef;
     
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;         /* Espacio entre columnas */
+  width: 100%;
+  max-width: auto;
+  box-sizing: border-box;
+}
+
+.columna-izquierda {
+  flex: 0 0 35%;
+  max-width: 35%;
+  min-width: 250px;
+  
+    
+}
+
+.columna-derecha {
+  flex: 0 0 65%;
+  max-width: 65%;
+    min-width: 250px;
+  
+}
+
+.banner-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.banner-foto {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 35%;
+}
+
+.banner-info {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 65%;
+}
+
+/* Estilo general para la tabla de habilidades */
+#habilidades table {
+  width: 100%;
+  background-color: #fff7e6;
+  color: #020826;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Encabezados de la tabla */
+#habilidades th {
+  background-color: #8c7851;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Celdas de la tabla */
+#habilidades td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eaddcf;
+}
+
+/* Última fila sin borde inferior */
+#habilidades tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alternar color de filas */
+#habilidades tr:nth-child(even) td {
+  background-color: #f9f4ef;
+}
+
+/* Cambia el color de las viñetas */
+ul li::marker,
+ol li::marker {
+  color: #f25042;
+  font-size: 1.2em;
+}
+
+/* Cambia el color del texto de los ítems de lista */
+ul li,
+ol li {
+  color: #140d0b; /* Cambia este valor por el color que desees para el texto */
+}
+
+
+
+
+
+
+
+

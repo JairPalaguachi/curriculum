@@ -12,59 +12,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheets/style.css">
+<link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Jair Palaguachi</h1>
-        <img src="./images/Foto Perfil.jpeg" alt="Foto de perfil de Jair Palaguachi"  id="photo">
-        <nav>
-            <ul>
-                <li><a href="#perfil-profesional">Perfil Profesional</a></li>
-                <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-            </ul>
-        </nav>
+        <section id="Banner">
+        <div class="banner-flex">
+            <div class="banner-foto">
+                <img src="./images/Foto Perfil.jpeg" alt="Foto de perfil de Jair Palaguachi" id="photo">
+            </div>
+            <div class="banner-info">
+                <h1>Jair Palaguachi</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#perfil-profesional">Perfil Profesional</a></li>
+                        <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
+                        <li><a href="#educacion">Educación</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#referencias">Referencias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </section>
+    
     </header>
     <main>
-        <section id="perfil-profesional">
-            <h2 class="subtitle">Perfil Profesional</h2>
-            <p>Soy estudiante de Ingeniería en Computación en la Universidad Politécnica Superior del Litoral (ESPOL). Me apasiona el desarrollo de software, la arquitectura de computadores y la resolución de problemas computacionales. A lo largo de mi formación, he adquirido conocimientos en estructuras de datos, bases de datos, diseño de software y programación orientada a objetos. Además, tengo experiencia en lenguajes como C, Java y Python, así como en el uso de herramientas como Android Studio y MySQL</p>
-        </section>
-        <section id="experiencia-laboral">
-            <h2 class="subtitle">Experiencia Laboral</h2>
-            <li> Ayudante de docencia en Fundamentos de Programación (ESPOL) - 2024
-                <p>Impartí clases durante un semestre en conceptos relacionados a los principios de la programación en Python.</p>
-            </li>
-        </section>
-
-        <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            
-            <ul>
-            <li> Escuela Superior Politécnica del Litoral (<a href="https://www.espol.edu.ec" target="_blank">ESPOL</a>)
-                <p>Ingeniería en Computación (2023 - Actualidad)</p>
-            </li>
-            <li> Institución Educativa Dr. Manuel Córdova Galarza
-                <p>Educación secundaria (2021 - 2022)</p>
-            </li>
-            <li> Unidad Educativa Juan XXIII
-                <p>Educación primaria y secundaria (2009 - 2021)</p>
-            </li>
-            </ul>
-
- 
-            <div style="margin-top:16px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=Lh2KTUucLj-ybx6v" 
-                    title="Video ESPOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
+        <div class="container">
+        <div class="columna-izquierda"> 
 
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
@@ -97,8 +74,7 @@
             <p>Resumen:</p>
 
             <!-- Tabla sin bordes -->
-            <table style="border-collapse: collapse;" border="0" cellspacing="5" cellpadding="5" 
-                width="75%">
+            <table >
                 
                 <tr>
                     <th></th>
@@ -132,7 +108,7 @@
                     <td>Básico</td>
             </table>
         </section>
-
+        
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
             <p>Correo Electrónico:  <a href="mailto:">jpalagua@espol.edu.ec</a>
@@ -200,6 +176,51 @@
             </form>
         </section>
 
+        </div> 
+
+        <div class="columna-derecha">
+        
+
+
+        <section id="perfil-profesional">
+            <h2 class="subtitle">Perfil Profesional</h2>
+            <p>Soy estudiante de Ingeniería en Computación en la Universidad Politécnica Superior del Litoral (ESPOL). Me apasiona el desarrollo de software, la arquitectura de computadores y la resolución de problemas computacionales. A lo largo de mi formación, he adquirido conocimientos en estructuras de datos, bases de datos, diseño de software y programación orientada a objetos. Además, tengo experiencia en lenguajes como C, Java y Python, así como en el uso de herramientas como Android Studio y MySQL</p>
+        </section>
+         
+
+        <section id="experiencia-laboral">
+            <h2 class="subtitle">Experiencia Laboral</h2>
+            <ul>
+            <li> Ayudante de docencia en Fundamentos de Programación (ESPOL) - 2024
+                <p>Impartí clases durante un semestre en conceptos relacionados a los principios de la programación en Python.</p>
+            </li>
+        </ul>
+        </section>
+        
+        <section id="educacion">
+            <h2 class="subtitle">Educación</h2>
+            
+            <ul>
+            <li> Escuela Superior Politécnica del Litoral (<a href="https://www.espol.edu.ec" target="_blank">ESPOL</a>)
+                <p>Ingeniería en Computación (2023 - Actualidad)</p>
+            </li>
+            <li> Institución Educativa Dr. Manuel Córdova Galarza
+                <p>Educación secundaria (2021 - 2022)</p>
+            </li>
+            <li> Unidad Educativa Juan XXIII
+                <p>Educación primaria y secundaria (2009 - 2021)</p>
+            </li>
+            </ul>
+
+ 
+            <div style="margin-top:16px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=Lh2KTUucLj-ybx6v" 
+                    title="Video ESPOL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
         <section id="referencias">
             <h2 class="subtitle">Referencias</h2>
             <ul>
@@ -258,6 +279,13 @@
                 </p>
             </article>
         </section>
+        </div>
+
+        
+        
+        
+
+    </div>   
     </main>
     <footer>
         <p>&copy; 2025 Jair Palaguachi. Todos los derechos reservados.</p>
