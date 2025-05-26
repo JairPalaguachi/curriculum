@@ -2,10 +2,10 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #eaddcf;
     font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
     color: #8c7851;
@@ -57,6 +57,19 @@ p {
 #photo {
     width: 16vw;
     height: auto;
+    display: flex;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+
+    /* Organizar los elementos en una fila horizontal */
+    flex-direction: row;
+
+    /* Distribuir espacio equitativamente entre los elementos */
+    justify-content: space-evenly;
+
+    /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center;
+    
+
 }
 
 /* Selector por clase para subtítulos */
@@ -77,10 +90,24 @@ footer  p {
     font-style: italic;
 
 }
-nav > ul {
+nav > ul { /*Selector de hijo inmediato */
 
     /* Eliminar los estilos de lista predeterminados */
     list-style: none;
+
+    /* Activar modelo de diseño flexbox */
+    display: flex;
+
+    /* Organizar los elementos en una fila horizontal */
+    flex-direction: row;
+
+    /* Distribuir espacio equitativamente entre los elementos */
+    justify-content: space-evenly;
+
+    /* Centra verticalmente los elementos dentro del contenedor */
+    align-items: center;
+    /* Establece un espacio uniforme de 1rem entre cada elemento */
+    gap: 1rem;
 
 }
 
@@ -106,35 +133,34 @@ section {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;         /* Espacio entre columnas */
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 1.5rem; /* Espacio entre columnas */
   width: 100%;
   max-width: auto;
   box-sizing: border-box;
 }
 
-.columna-izquierda {
-  flex: 0 0 35%;
-  max-width: 35%;
-  min-width: 250px;
-  
-    
-}
-
+.columna-izquierda,
 .columna-derecha {
-  flex: 0 0 65%;
-  max-width: 65%;
-    min-width: 250px;
   
+  max-width: 100%;
+  min-width: 250px;
 }
-
+#video{
+  border: none;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
 .banner-flex {
   display: flex;
   align-items: center;
   gap: 2rem;
   width: 100%;
 }
+
 
 .banner-foto {
   flex: 0 0 auto;
@@ -151,6 +177,7 @@ section {
   justify-content: center;
   max-width: 65%;
 }
+  */
 
 /* Estilo general para la tabla de habilidades */
 #habilidades table {
@@ -200,6 +227,50 @@ ol li {
   color: #140d0b; /* Cambia este valor por el color que desees para el texto */
 }
 
+section > form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Grid vs Flexbox para testimonios */
+/*Grid  para testimonios */
+section#testimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+section#testimonios > h3 {
+    grid-column: 1 / -1; /* El subtítulo ocupa todo el ancho */
+}
+
+/*Flexbox para testimonios */
+#testimonios {
+
+     /* Activa el modelo Flexbox */
+     display: flex;
+
+     /* Permite que los hijos pasen a la siguiente línea si no caben */
+     flex-wrap: wrap;
+
+     /* Espaciado uniforme entre filas y columnas */
+     gap: 1rem;
+
+     justify-content: space-between;
+
+}
+
+#testimonios > h2 {
+    /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
+     flex: 0 0 100%;
+}
+
+#testimonios > article {
+
+     /* Distribuye equitativamente los artículos en tres columnas */
+     flex: 1 1 calc(33.333% - 1rem);
+
+}
 
 
 
