@@ -1,5 +1,18 @@
 * {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #eaddcf;
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+    color: #8c7851;
+    font-size: 1.2rem;
+    
+
+
 }
 
 
@@ -9,11 +22,35 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #020826;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+
+
 }
 h2 {
     text-align:left;
     font-weight: bold;
+}
+
+/* Selector por clase para el párrafo */
+p {
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+    color: #8c7851;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+
 }
 
 /* Selector por id para la foto */
@@ -24,8 +61,12 @@ h2 {
 
 /* Selector por clase para subtítulos */
 .subtitle {
-    color: rgb(151 156 165 / 0.89);
-    text-transform: uppercase;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 100;
+    color: #020826;
 }
 footer  p {
 
@@ -43,7 +84,7 @@ nav > ul {
 
 }
 section {
-    border: 0.2pt solid #cedddd;
+    border: 0.2pt solid #8c7851dd;
     margin: 4px 2px 8px 2px;
     padding: 1.5% 0.8%;
     margin-bottom: 1.2rem;
@@ -57,4 +98,8 @@ section {
    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+
+    /* color de fondo */
+    background-color: #f9f4ef;
+    
 }
