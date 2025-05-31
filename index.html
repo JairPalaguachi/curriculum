@@ -13,42 +13,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./stylesheets/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <section id="Banner">
         
-        <div class="banner-info">
-                <h1>Jair Palaguachi</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#perfil-profesional">Perfil Profesional</a></li>
-                        <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
-                        <li><a href="#educacion">Educación</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="#referencias">Referencias</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            
-                <img src="./images/Foto Perfil.jpeg" alt="Foto de perfil de Jair Palaguachi" id="photo">
-            
-            
-        
-        </section>
-        
-    
-    </header>
+        <nav class="nav-cafe">
+          <ul>
+            <li><a href="#perfil-profesional">Perfil Profesional</a></li>
+            <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+          </ul>
+        </nav>
+
+    <section id="Banner">
+        <img src="./images/Foto Perfil.jpeg" alt="Foto de perfil de Jair Palaguachi" id="photo">
+       <h1>Jair Palaguachi</h1>
+  </section>
+</header>
     <main>
         <div class="container">
         <div class="columna-izquierda"> 
 
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
-            <p>Habilidades Técnicas:</p>
+            <p class="sub">Habilidades Técnicas:</p>
 
             <!-- Lista ordenada -->
             <ol>
@@ -61,7 +56,7 @@
 
             </ol>
 
-            <p>Habilidades Blandas:</p>
+            <p class="sub">Habilidades Blandas:</p>
 
             <!-- Lista no ordenada -->
             <ul>
@@ -74,7 +69,7 @@
 
             </ul>
             
-            <p>Resumen:</p>
+            <p class="sub">Resumen:</p>
 
             <!-- Tabla sin bordes -->
             <table >
@@ -114,12 +109,10 @@
         
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
-            <p>Correo Electrónico:  <a href="mailto:">jpalagua@espol.edu.ec</a>
-            <p>Teléfono: <a href="tel:+59398626876">+593 92986276</a></p>
-            <p>Dirección: Guayaquil, Ecuador </p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jair-palaguachi-123456789/" target="_blank">Jair Palaguachi</a></p>
-            <p>GitHub: <a href="https://jairpalaguachi.github.io/JairPalaguachi/" target="_blank">JairPalaguachi</a></p>
-            <p>Campus ESPOL:
+            <p><i class="fas fa-envelope"></i> Correo Electrónico: <a href="mailto:">jpalagua@espol.edu.ec</a></p>
+            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/jair-palaguachi-123456789/" target="_blank">Jair Palaguachi</a></p>
+            <p><i class="fab fa-github"></i> GitHub: <a href="https://jairpalaguachi.github.io/JairPalaguachi/" target="_blank">JairPalaguachi</a></p> <br>
+             <h3 class="sub">Mapa ESPOL:</h3>
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9275937854717!2d-79.96740373045667!3d-2.147934799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1d7e2e7e1%3A0x7e6b0e6b0e6b0e6b!2sEscuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses!2sec!4v1716123456789!5m2!1ses!2sec" 
                 width="100%" 
@@ -128,13 +121,15 @@
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            </p>
-
-
-            <p> 
+            </iframe> 
+            <h3 class="sub">Campus ESPOL:</h3>
+            <section class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LH4id9JY9u4?si=zdMfr2fAtpxcM88a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </iframe>
+            </section>
+            <h3 class="sub"> 
                 Contáctame a través del siguiente formulario:
-            </p>
+            </h3>
 
             <form action="#" method="post" >
             
@@ -214,36 +209,37 @@
                 <p>Educación primaria y secundaria (2009 - 2021)</p>
             </li>
             </ul>
-
-
-                <section id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=Lh2KTUucLj-ybx6v" 
-                    title="Video ESPOL"  ="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-                </section>
-            
+ 
         </section>
+
+        <section id="idiomas">
+  <h2 class="subtitle">Idiomas</h2>
+  <ul>
+    <li>Español (Nativo)</li>
+    <li>Inglés (Intermedio - nivel B2 certificado por ECCE en el <a href="https://www.cenecuador.edu.ec/" target="_blank">CEN</a>)</li>
+    
+  </ul>
+</section>
 
         <section id="referencias">
             <h2 class="subtitle">Referencias</h2>
             <ul>
                 <li>
-                    <p> Gina Sofía Arteaga Lara</p>
+                    <h3 class="sub"> Gina Sofía Arteaga Lara</h3>
                     <p>Ingeniera en Contabilidad y Auditoría</p>
                     <p>Correo Electrónico:  <a href="mailto:">gina.arteaga.94@gmail.com</a>
             <p>Teléfono: <a href="tel:+593959273190">(+593) 0959273190</a></p>
                 </li>
 
                 <li>
-                    <p> Laura Estefanía Arteaga Lara</p>
+                    <h3 class="sub"> Laura Estefanía Arteaga Lara</h3>
                     <p>Ingeniera Comercial</p>
                     <p>Correo Electrónico:  <a href="mailto:">laura.artelara@gmail.com</a>
             <p>Teléfono: <a href="tel:+593967351150">(+593) 0967351150</a></p>
                 </li>
 
                 <li>
-                    <p>Marjorie Elizabeth Jalca Lara</p>
+                    <h3 class="sub">Marjorie Elizabeth Jalca Lara</h3>
                     <p>Ama de casa</p>
                     <p>Correo Electrónico:  <a href="mailto:">mayi.jalca.lara@gmail.com</a>
             <p>Teléfono: <a href="tel:+593963410231">(+593) 0963410231</a></p>
@@ -253,35 +249,32 @@
         </section>
             
         <section id="testimonios">
-            <h3 class="testimonios">Testimonios</h3>
+            <h2 class="subtitle">Testimonios</h2>
             <article>
                 <blockquote>
                     "Jair demostró una gran capacidad para resolver problemas complejos y trabajar bajo presión."
                 </blockquote>
-                <p>
-                    <span>Gina Sofía Arteaga Lara</span><br>
-                    Ingeniera en Contabilidad y Auditoría<br>
-                    Gina, mi tia, fue un pilar fundamental en mi educación y me guió en mis primeros pasos.
+                <p class="contenido">
+                    <span class="sub">Gina Sofía Arteaga Lara</span>
+                    <span class="descripcion">Gina, mi tia, fue un pilar fundamental en mi educación y me guió en mis primeros pasos.</span>
                 </p>
             </article>
             <article>
                 <blockquote>
                     "Su actitud proactiva y habilidades técnicas fueron clave para el éxito de nuestro equipo."
                 </blockquote>
-                <p>
-                    <span>Laura Estefanía Arteaga Lara</span><br>
-                    Ingeniera Comercial<br>
-                    Laura, mi tia, fue un pilar fundamental en mi educación y me guió en mis primeros pasos.
+                <p class="contenido">
+                    <span class="sub">Laura Estefanía Arteaga Lara</span>
+                    <span class="descripcion">Laura, mi tia, fue un pilar fundamental en mi educación y me guió en mis primeros pasos.</span>
                 </p>
             </article>
             <article>
                 <blockquote>
                     "Jair es un profesional confiable, siempre dispuesto a aprender y aportar nuevas ideas."
                 </blockquote>
-                <p>
-                    <span>Marjorie Elizabeth Jalca Lara</span><br>
-                    Ama de casa<br>
-                    Marjorie, mi mamá, me forjó valores y me guió durante toda mi educación.
+                <p class="contenido">
+                    <span class="sub">Marjorie Elizabeth Jalca Lara</span>
+                    <span class="descripcion">Marjorie, mi mamá, me forjó valores y me guió durante toda mi educación.</span>
                 </p>
             </article>
         </section>

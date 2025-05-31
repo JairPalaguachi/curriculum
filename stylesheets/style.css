@@ -1,6 +1,6 @@
 * {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #eaddcf;
+    color: #020826;
     font-family: "Nunito Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -11,8 +11,6 @@
     color: #8c7851;
     font-size: 1.2rem;
     
-
-
 }
 
 
@@ -29,14 +27,14 @@ h1 {
   margin: 0.5rem 0;
   padding: 0.5rem;
 
-
 }
+
 h2 {
-    text-align:left;
+    
     font-weight: bold;
 }
 
-/* Selector por clase para el párrafo */
+/* Selector por clase para los párrafos */
 p {
     font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -50,26 +48,18 @@ p {
     line-height: 1.5;
     margin: 0.5rem 0;
     padding: 0.5rem;
+    text-align:justify
 
 }
 
 /* Selector por id para la foto */
 #photo {
-    width: 16vw;
+    width: 100%;
+    max-width: 180px; /* o el tamaño máximo que prefieras */
     height: auto;
-    display: flex;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-
-    /* Organizar los elementos en una fila horizontal */
-    flex-direction: row;
-
-    /* Distribuir espacio equitativamente entre los elementos */
-    justify-content: space-evenly;
-
-    /* Centra verticalmente los elementos dentro del contenedor */
-    align-items: center;
+    display: block;
+    margin: 0 auto;
     
-
 }
 
 /* Selector por clase para subtítulos */
@@ -108,11 +98,35 @@ nav > ul { /*Selector de hijo inmediato */
     align-items: center;
     /* Establece un espacio uniforme de 1rem entre cada elemento */
     gap: 1rem;
+    background-color: #8c7851;
+  
+  padding: 1rem;
+  margin-top: 1rem;
+  
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
 
 }
 
+/* Estilo para los enlaces dentro del menú de navegación */
+.nav-cafe li a:hover {
+  background: #b68973;
+  color: #fff;
+}
+
+.nav-cafe li a {
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+
+/* Estilo para las secciones */
 section {
-    border: 0.2pt solid #8c7851dd;
+    border: 0.2pt solid none;
     margin: 4px 2px 8px 2px;
     padding: 1.5% 0.8%;
     margin-bottom: 1.2rem;
@@ -132,51 +146,25 @@ section {
     
 }
 
+/* Estilo para la el contenedor general de ambas secciones (left-right) usando Grid*/
 .container {
   display: grid;
   grid-template-columns: 35% 65%;
-  gap: 1.5rem; /* Espacio entre columnas */
-  width: 100%;
-  max-width: auto;
+  gap: 0.1rem;
+  width: 100%;         
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.columna-izquierda,
-.columna-derecha {
-  
-  max-width: 100%;
-  min-width: 250px;
-}
+/* Estilo para el video del Campus*/
 #video{
-  border: none;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*
-.banner-flex {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-}
-
-
-.banner-foto {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 35%;
+  align-items: center;
+ 
 }
 
-.banner-info {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 65%;
-}
   */
 
 /* Estilo general para la tabla de habilidades */
@@ -224,53 +212,104 @@ ol li::marker {
 /* Cambia el color del texto de los ítems de lista */
 ul li,
 ol li {
-  color: #140d0b; /* Cambia este valor por el color que desees para el texto */
+  color: #8c7851; /* Cambia este valor por el color que desees para el texto */
 }
 
+ul, ol {
+  padding-left: 1.5em;
+}
+ul li, ol li {
+  margin-bottom: 0.4em;
+}
+
+/* Estilo para el formulario de contacto */
 section > form {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left
+
 }
 
-/*Grid vs Flexbox para testimonios */
+button[type="submit"] {
+  background: #8c7851;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #b68973;
+}
+
+
 /*Grid  para testimonios */
 section#testimonios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    padding: 1rem;
+    
 }
 
-section#testimonios > h3 {
+section#testimonios > h2 {
     grid-column: 1 / -1; /* El subtítulo ocupa todo el ancho */
 }
 
-/*Flexbox para testimonios */
-#testimonios {
-
-     /* Activa el modelo Flexbox */
-     display: flex;
-
-     /* Permite que los hijos pasen a la siguiente línea si no caben */
-     flex-wrap: wrap;
-
-     /* Espaciado uniforme entre filas y columnas */
-     gap: 1rem;
-
-     justify-content: space-between;
-
+/* Estilo para los testimonios */
+.sub {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: 100;
+    color: #886c5d;
+    margin-top: 0.5rem;
 }
 
-#testimonios > h2 {
-    /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
-     flex: 0 0 100%;
-}
-
-#testimonios > article {
-
-     /* Distribuye equitativamente los artículos en tres columnas */
-     flex: 1 1 calc(33.333% - 1rem);
+.contenido{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    
 
 }
+.descripcion {
+  display: block;
+  margin-top: 0.5em; /* Opcional: espacio entre líneas */
+}
+
+
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem;
+  }
+  .nav-cafe {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* Estilo para los iconos de Font Awesome */
+i.fas, i.fab {
+  color: #8c7851;
+  margin-right: 0.5em;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
 
 
 
